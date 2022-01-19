@@ -1,0 +1,73 @@
+body{
+    background: #e3edf7;
+    height:100vh;
+}
+.vertical-nav {
+    width: 17rem;
+    height:100%;
+    top: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+}
+.ck, .cn, .age{
+    list-style: none;
+    margin-left: 0;
+    margin-right:0;
+    border:1px solid gold;
+}
+
+
+
+/**************Languages Progress Bars************** */
+
+.outer{
+    width:50px;
+    height: 50px;
+    border-radius:50px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(255,255,255,0.7) ;
+    padding:9px;
+}
+.inner{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    display: flex;
+    justify-content:center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0,0,0,0.15),
+    0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+#engvalue{
+    font-weight:600px;
+    color:#555;
+}
+circle{
+    fill:none;
+    stroke:url(#GradientColor);
+    stroke-width:8px;
+    stroke-dasharray: 200%;
+    stroke-dashoffset: 0%;
+    animation: anim 2s linear forwards;
+}
+.english > svg{
+    position:relative;
+    top:0;
+    left:0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+/* ********************************************* */
+
+
