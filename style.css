@@ -261,6 +261,20 @@ html, body{
     content: "70%";
 }
 /*****************************************************/
+
+/**********************other skills*******************/
+.other-skills .design-deployment-skills li::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    content: "\f00c";
+    font-size:20px;
+    color: gold;
+    margin-right: 1rem;
+}
+.other-skills > ul > li{
+    list-style: none;
+}
+/*********************************************************/
 /*******************Socials******************************* */
 
 .socials{
