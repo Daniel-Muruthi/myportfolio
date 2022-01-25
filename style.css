@@ -123,4 +123,12 @@ html, body{
 }
 /* ********************************************* */
 
+/*******************Socials******************************* */
+
+.socials{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
 
