@@ -9,9 +9,50 @@ body{
     background: #e3edf7;
     height:100vh;
 }
-.vertical-nav {
-    width: 17rem;
+.vnav-wrapper{
     height:100%;
+    width:17rem;
+    position:relative;
+}
+input[type="checkbox"]{
+    display:none;
+}
+.vnav-wrapper .vnav-btn{
+    position:absolute;
+    top: 10px;
+    left: 0.5rem;
+    height:45px;
+    width:45px;
+    z-index:999;
+    color:black;
+    background:#fff;
+    border: 1px solid #333;
+    text-align: center;
+    line-height:45px;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: x-large;
+    transition: all 0.3s ease;
+}
+#v-btn:checked ~ .vnav-btn{
+    left: 15.5rem;
+}
+#v-btn:checked ~ .vnav-btn i:before{
+    content: "\f00d";
+}
+.vnav-wrapper #sidebar{
+    position:relative;
+    /* height:100%;
+    background:#404040; */
+    width: 17rem;
+    overflow:hidden;
+    left: -17rem;
+    transition: all 0.3s ease;
+}
+#v-btn:checked ~ #sidebar{
+    left: 0;
+}
+.vertical-nav {
     top: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
@@ -281,8 +322,12 @@ html, body{
     display:flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
 }
-
+.socials .a:hover{
+    cursor:pointer;
+    transform: scale(1.5);
+}
 /************************************************************/
 
 
