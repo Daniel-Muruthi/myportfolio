@@ -9,6 +9,8 @@ body{
     background: #e3edf7;
     height:100vh;
 }
+/***********************left side bar toggler****/
+@media (max-width:753px){
 .vnav-wrapper{
     height:100%;
     width:17rem;
@@ -52,7 +54,16 @@ input[type="checkbox"]{
 #v-btn:checked ~ #sidebar{
     left: 0;
 }
+}
+/******************************************/
+@media (min-width:754px){
+    #v-btn , .vnav-btn{
+        display:none;
+    }
+}
 .vertical-nav {
+    width:17rem;
+    height:100%;
     top: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
@@ -329,5 +340,4 @@ html, body{
     transform: scale(1.5);
 }
 /************************************************************/
-
 
