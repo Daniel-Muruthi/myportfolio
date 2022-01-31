@@ -4,8 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  list-style: none;
-  text-decoration: none;
 }
 body{
     background: #e3edf7;
@@ -13,11 +11,17 @@ body{
 }
 /*************navbar***************************************/
 .main-sidebar{
-    position:fixed;
-    right:0;
-    width:15rem;
+    position: fixed;
+    right: 0;
+    width: 15rem;
     height: 100vh;
     background: #042331;
+}
+.main-sidebar ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
 }
 .main-sidebar header{
     font-size: x-large;
@@ -27,22 +31,19 @@ body{
     background: #063146;
     user-select: none;
 }
-.main-sidebar ul{
-    list-style:none;
-    text-decoration: none;
-}
-.main-sidebar ul li a{
-    /* display: block; */
-    height:100%;
-    width:100%;
+.main-sidebar ul a{
+    display:block;
+    height: 100%;
+    width: 100%;
     line-height: 65px;
     font-size: 20px;
+    color: #fff;
+    text-align: center;
     box-sizing: border-box;
-    border-top: 1px solid rgba(255,255,255, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
 }
-.main-sidebar ul li{
-    color: white;
-}
+
 /**********************************************************/
 /***********************left side bar toggler****/
 @media (max-width:753px){
