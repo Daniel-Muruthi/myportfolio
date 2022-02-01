@@ -6,8 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #e3edf7;
     height:100vh;
+    background:url(Assets/chinese-temple.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /*************navbar***************************************/
@@ -65,8 +67,8 @@ label #sidebar-btn, label #sidebar-cancel{
 }
 label #sidebar-btn{
     right: 40px;
-    top: 25px;
-    font-size: 35px;
+    top: 18px;
+    font-size: 25px;
     color: white;
     padding: 6px 12px;
     transition: all 0.5s ease;
