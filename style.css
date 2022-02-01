@@ -9,6 +9,7 @@ body{
     background: #e3edf7;
     height:100vh;
 }
+
 /*************navbar***************************************/
 .main-sidebar{
     position: fixed;
@@ -52,11 +53,11 @@ ul li:hover a{
 .main-sidebar ul a i{
     margin-right: 16px;
 }
-#sidebar-check{
-    display: none;
+input#sidebar-check{
+    display: none !important;
 }
 label #sidebar-btn, label #sidebar-cancel{
-    position: absolute;
+    position:fixed;
     cursor: pointer;
     /* right:15rem; */
     background: #042331;
@@ -98,8 +99,8 @@ label #sidebar-cancel{
     width:17rem;
     position:relative;
 }
-input[type="checkbox"]{
-    display:none;
+input[type="checkbox"]#v-btn{
+    display:none !important;
 }
 .vnav-wrapper .vnav-btn{
     position:absolute;

@@ -16,3 +16,6 @@ $(".french .bar").circleProgress({
 $(".chinese .bar").circleProgress({
     value: 0.03,
 });
+
+////////////////////////sidebar checkbar hide ///////////////////
+
