@@ -12,7 +12,7 @@ body{
 /*************navbar***************************************/
 .main-sidebar{
     position: fixed;
-    right: 0;
+    right: -15rem; /********-15rem*******/
     width: 15rem;
     height: 100vh;
     background: #042331;
@@ -38,12 +38,47 @@ body{
     line-height: 65px;
     font-size: 20px;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 3rem;
     box-sizing: border-box;
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid black;
+    transition: all 0.3s ease;
 }
-
+ul li:hover a{
+    padding-left: 1rem;
+}
+.main-sidebar ul a i{
+    margin-right: 16px;
+}
+#sidebar-check{
+    display: none;
+}
+label #sidebar-btn, label #sidebar-cancel{
+    position: absolute;
+    cursor: pointer;
+    /* right:15rem; */
+    background: #042331;
+    border-radius: 3px;
+}
+label #sidebar-btn{
+    right: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+}
+label #sidebar-cancel{
+    z-index:1111;
+    right:14.5rem;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+}
+#sidebar-check:checked ~ .main-sidebar{
+    right:0;
+}
 /**********************************************************/
 /***********************left side bar toggler****/
 @media (max-width:753px){
