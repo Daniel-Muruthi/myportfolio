@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Muruthi</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Neonderthaw&family=Satisfy&display=swap" rel="stylesheet">
@@ -16,22 +17,75 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <input type="checkbox" id="sidebar-check" class="d-none">
-    <label for="sidebar-check">
-        <i class="fas fa-bars" id="sidebar-btn"></i>
-        <i class="fas fa-times" id="sidebar-cancel"></i>
-    </label>
-    <div  class="main-sidebar">
-        <header class="sidebar-title">Menu</header>
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#"><i class="fas fa-file "></i>Projects</a></li>
-            <li><a href="#"><i class="fas fa-briefcase "></i>Services</a></li>
-            <li><a href="#"><i class="fa fa-id-badge " aria-hidden="true"></i>About</a></li>
-            <li><a href="#"><i class="fas fa-address-book "></i>Contacts</a></li>
-            <li><a href="#"><i class="fas fa-envelope "></i>Feedback</a></li>
+    <div class="main-sidebar">
+        <div class="logo-content">
+            <img src="Assets/Asterea.jpg" class="logo-image">
+            <div class="logo-name">Menu</div>
+            <i class="bx bx-menu" id="sidebar-btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search-alt-2'></i>
+                <input type="text" placeholder="Search..." class="sidebar-input">
+                <span class="sidebar-tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="sidebar-links-name">Dashboard</span>
+                </a>
+                <span class="sidebar-tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-folder'></i>
+                    <span class="sidebar-links-name">Projects</span>
+                </a>
+                <span class="sidebar-tooltip">Projects</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-briefcase'></i>
+                    <span class="sidebar-links-name">Services</span>
+                </a>
+                <span class="sidebar-tooltip">Services</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user-account'></i>
+                    <span class="sidebar-links-name">About</span>
+                </a>
+                <span class="sidebar-tooltip">About Me</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-phone-call'></i>
+                    <span class="sidebar-links-name">Contacts</span>
+                </a>
+                <span class="sidebar-tooltip">Contacts</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-conversation'></i>
+                    <span class="sidebar-links-name">Feedback</span>
+                </a>
+                <span class="sidebar-tooltip">Feedback</span>
+            </li>
+            <li class="profile">
+                <div class="profile-content">
+                    <img src="Assets/profile.png" alt="My_Picture">
+                    <div class="job-tag">
+                        <div class="name">Daniel Muruthi</div>
+                        <div class="occupation">FullStack Web Developer</div>
+                    </div>
+                </div>
+                <i class="bx bx-log-out" id="log-out"></i>
+            </li>
         </ul>
     </div>
+    <!-- <section class="home-content">
+        <div class="sidebar-text">Home-Content</div>
+    </section> -->
     <div class="vnav-wrapper">
         <input type="checkbox" id="v-btn">
         <label for="v-btn" class="vnav-btn">
