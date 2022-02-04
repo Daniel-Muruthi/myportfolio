@@ -12,7 +12,7 @@ body{
     background-size: cover;
 }
 
-/*****************main-sidebar*************************/
+/*****************main-sidebar or navbar*************************/
 .main-sidebar{
     position: fixed;
     top:0;
@@ -174,10 +174,10 @@ body{
     box-sizing: border-box;
     transition: all 0.4s ease;
     border-radius: 12px;
+    color: #11101d;
 }
 .main-sidebar ul li a:hover{
-    color: #11101d;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
 }
 .main-sidebar ul li i{
     height: 50px;
@@ -341,12 +341,20 @@ input[type="checkbox"]#v-btn{
         display:none;
     }
 }
+#sidebar{
+    position: absolute;
+    background: #1d1b31;
+    color: white;
+    border: 1px solid #fff;
+    /* opacity:0.4; */
+}
 .vertical-nav {
     width:17rem;
     height:100%;
     top: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
+    background: #1d1b31;
   }
 .intro{
     display: flex;
@@ -358,7 +366,7 @@ input[type="checkbox"]#v-btn{
     list-style: none;
     margin-left: 0;
     margin-right:0;
-    border:1px solid gold;
+    border:1.5px solid #fff;
 }
 .location{
     font-size:12px !important;
@@ -420,7 +428,7 @@ html, body{
 }
 .card .circle .box span,
 .wrapper .card .text{
-    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    background: -webkit-linear-gradient(left, #1d1b31, #1d1b31);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -479,6 +487,7 @@ html, body{
     font-size:12px;
     font-weight:bold;
     opacity:0;
+    color:#11101d;
     animation: showText 0.5s 1s linear forwards;
 }
 @keyframes showText {
@@ -559,7 +568,7 @@ html, body{
     font-size: 10px;
     padding: 1px 8px;
     border-radius: 3px;
-    background: #000;
+    background: #11101d;
     opacity:0;
     animation: showText2 0.5s 1.5s linear forwards;
 }
