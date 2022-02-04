@@ -278,8 +278,7 @@ body{
 /***************mid content starts here*****************/
 .home-content{
     position: absolute;
-    background: #1d1b31;
-    opacity: 0.3;
+    background: rgba(29, 27, 49, 0.3);
     height: 100vh;
     top: 0;
     right: 78px;
