@@ -7,9 +7,13 @@
 }
 body{
     height:100vh;
+}
+.project-body{
     background:url(Assets/chinese-temple.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    height:100vh;
+    width: 100vw;
 }
 
 /*****************main-sidebar or navbar*************************/
@@ -266,14 +270,21 @@ body{
     width: 50px;
     background: none;
 }
+@media (max-width: 420px){
+    .main-sidebar ul li .sidebar-tooltip{
+        display:none;
+    }
+}
+/***************mid content starts here*****************/
 .home-content{
-    position: relative;
-    background: #E4E9F7;
-    min-height: 100vh;
+    position: absolute;
+    background: #1d1b31;
+    opacity: 0.3;
+    height: 100vh;
     top: 0;
     right: 78px;
-    left:0;
-    width: calc(100% - 78px);
+    left:17rem;
+    width: calc(100% - (17rem +78px));
     transition: all 0.5s ease;
     z-index: 2;
 }
@@ -283,16 +294,12 @@ body{
 }
 .home-content .sidebar-text{
     display: inline-block;
-    color: #11101d;
+    color: #fff;
     font-size: 25px;
     font-weight: 500;
     margin: 18px
 }
-@media (max-width: 420px){
-    .main-sidebar ul li .sidebar-tooltip{
-        display:none;
-    }
-}
+/******************mid content ends here****************/
 /********************end of main-sidebar*******************/
 /***********************left side bar toggler****/
 @media (max-width:753px){
