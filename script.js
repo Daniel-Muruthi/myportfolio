@@ -32,12 +32,12 @@ searchBtn.onclick = function(){
     sidebarBtnChange(); //This will call the function optionally
 }
 
-function menuBtnChange() {
+function sidebarBtnChange() {
     if(mainSideBar.classList.contains("active")){
-        btn.classList.replace("bx-menu", "bx-menu-alt-left");
+        btn.classList.replace("bx-menu", "bx-menu-alt-right");
     }
     else{
-        btn.classList.replace("bx-menu-alt-left", "bx-menu")
+        btn.classList.replace("bx-menu-alt-right", "bx-menu")
     }
 }
 /////////////////////////////////////////////////////////

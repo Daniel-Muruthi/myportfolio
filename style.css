@@ -23,6 +23,7 @@ body{
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
+    border:1px solid #fff;
 }
 .main-sidebar.active{
     width: 250px;
@@ -54,6 +55,7 @@ body{
     font-weight: 600;
     opacity: 0;
     transition: all 0.5s ease;
+    margin-left: 5px;
 }
 .main-sidebar.active .logo-content .logo-image,
 .main-sidebar.active .logo-content .logo-name{
@@ -231,9 +233,12 @@ body{
     border-radius: 6px;
     margin-right: 10px;
 }
+.main-sidebar .profile-content .job-tag .name{
+    font-size: 14px;
+}
 .main-sidebar .profile-content .job-tag .name,
 .main-sidebar .profile-content .job-tag .occupation{
-    font-size: 12px;
+    /* font-size: 12px; */
     font-weight: 400;
     color: #fff;
     white-space: nowrap;
