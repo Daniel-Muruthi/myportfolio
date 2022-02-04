@@ -2,7 +2,7 @@ let options = {
     startAngle:-1.55,
     size: 50,
     value: 0.9,
-    fill: {gradient: ['#a445b2', '#fa4299']}
+    fill: {gradient: ['gold']}
 }
 $(".circle .bar").circleProgress(options).on('circle-animation-progress',
 function(event, progress, stepValue){
@@ -32,12 +32,12 @@ searchBtn.onclick = function(){
     sidebarBtnChange(); //This will call the function optionally
 }
 
-function menuBtnChange() {
+function sidebarBtnChange() {
     if(mainSideBar.classList.contains("active")){
-        btn.classList.replace("bx-menu", "bx-menu-alt-left");
+        btn.classList.replace("bx-menu", "bx-menu-alt-right");
     }
     else{
-        btn.classList.replace("bx-menu-alt-left", "bx-menu")
+        btn.classList.replace("bx-menu-alt-right", "bx-menu")
     }
 }
 /////////////////////////////////////////////////////////

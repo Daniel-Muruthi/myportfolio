@@ -12,7 +12,7 @@ body{
     background-size: cover;
 }
 
-/*****************main-sidebar*************************/
+/*****************main-sidebar or navbar*************************/
 .main-sidebar{
     position: fixed;
     top:0;
@@ -23,6 +23,7 @@ body{
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
+    border:1px solid #fff;
 }
 .main-sidebar.active{
     width: 250px;
@@ -54,6 +55,7 @@ body{
     font-weight: 600;
     opacity: 0;
     transition: all 0.5s ease;
+    margin-left: 5px;
 }
 .main-sidebar.active .logo-content .logo-image,
 .main-sidebar.active .logo-content .logo-name{
@@ -174,10 +176,10 @@ body{
     box-sizing: border-box;
     transition: all 0.4s ease;
     border-radius: 12px;
+    color: #11101d;
 }
 .main-sidebar ul li a:hover{
-    color: #11101d;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
 }
 .main-sidebar ul li i{
     height: 50px;
@@ -231,9 +233,12 @@ body{
     border-radius: 6px;
     margin-right: 10px;
 }
+.main-sidebar .profile-content .job-tag .name{
+    font-size: 14px;
+}
 .main-sidebar .profile-content .job-tag .name,
 .main-sidebar .profile-content .job-tag .occupation{
-    font-size: 12px;
+    /* font-size: 12px; */
     font-weight: 400;
     color: #fff;
     white-space: nowrap;
@@ -341,12 +346,20 @@ input[type="checkbox"]#v-btn{
         display:none;
     }
 }
+#sidebar{
+    position: absolute;
+    background: #1d1b31;
+    color: white;
+    border: 1px solid #fff;
+    /* opacity:0.4; */
+}
 .vertical-nav {
     width:17rem;
     height:100%;
     top: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
+    background: #1d1b31;
   }
 .intro{
     display: flex;
@@ -358,7 +371,7 @@ input[type="checkbox"]#v-btn{
     list-style: none;
     margin-left: 0;
     margin-right:0;
-    border:1px solid gold;
+    border:1.5px solid #fff;
 }
 .location{
     font-size:12px !important;
@@ -420,7 +433,7 @@ html, body{
 }
 .card .circle .box span,
 .wrapper .card .text{
-    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    background: -webkit-linear-gradient(left, #1d1b31, #1d1b31);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -459,8 +472,31 @@ html, body{
 /* ********************************************* */
 
 /***********************skills bars***************/
+.sidebar-languages-scroll{
+    overflow-x:hidden;
+    overflow-y: scroll;
+    position:relative;
+    height: 44.2vh;
+}
+.sidebar-languages-scroll::-webkit-scrollbar {
+    width:18px;
+}
+.sidebar-languages-scroll::-webkit-scrollbar-track {
+    background-color: white;
+}
+  
+.sidebar-languages-scroll::-webkit-scrollbar-thumb {
+    background-color: #1d1b31;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+  
+.sidebar-languages-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #11101d;
+}
 .skills-bar{
-    width:16rem;
+    width:15rem;
     background: rgb(236, 236, 236);
     border-radius:10px;
     padding:8px 15px;
@@ -479,6 +515,7 @@ html, body{
     font-size:12px;
     font-weight:bold;
     opacity:0;
+    color:#11101d;
     animation: showText 0.5s 1s linear forwards;
 }
 @keyframes showText {
@@ -559,7 +596,7 @@ html, body{
     font-size: 10px;
     padding: 1px 8px;
     border-radius: 3px;
-    background: #000;
+    background: #11101d;
     opacity:0;
     animation: showText2 0.5s 1.5s linear forwards;
 }
