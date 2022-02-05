@@ -13,10 +13,12 @@ body{
     background:url(Assets/chinese-temple.jpg) no-repeat;
     background-position: center;
     background-size:cover;
-    background-position-x: center;
+    background-position: center;
+    background-attachment:fixed;
     height:100vh;
     width: 100vw;
     /* display: block; */
+
 }
 
 /*****************main-sidebar or navbar*************************/
@@ -321,6 +323,7 @@ body{
 .home-content .upper-midbody .billboard .billboard-message .text-rotate{
     font-weight:200;
     margin: 0.4em 0;
+    /* color: #fff; */
 }
 .home-content .upper-midbody .billboard .billboard-message .billboard-cv{
     padding-left: 1rem;
@@ -339,6 +342,9 @@ body{
     opacity:0.8;
     /* bottom:0; */
     /* transform: translate(0, 90%); */
+}
+.home-content .upper-midbody .middle-midbody{
+
 }
 .home-content .upper-midbody .middle-midbody .tasks-completed{
     margin:0;
