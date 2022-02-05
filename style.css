@@ -340,6 +340,30 @@ body{
     /* bottom:0; */
     /* transform: translate(0, 90%); */
 }
+.home-content .upper-midbody .middle-midbody .tasks-completed{
+    margin:0;
+    padding:0;
+}
+.home-content .upper-midbody .middle-midbody .tasks-completed ul{
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    border: 1px solid #fff;
+}
+.home-content .upper-midbody .middle-midbody .tasks-completed ul li{
+    color: gold;
+    font-weight: bolder;
+    border-right:1px solid #fff;
+}
+.home-content .upper-midbody .middle-midbody .tasks-completed ul li strong{
+    color:#fff;
+    font-weight:bold;
+    font-size:20px;
+
+}
 /******************mid content ends here****************/
 /********************end of main-sidebar*******************/
 /***********************left side bar toggler****/
