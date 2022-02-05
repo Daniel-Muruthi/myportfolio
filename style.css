@@ -301,7 +301,7 @@ body{
     display: inline-block;
     min-height: 100vh;
     width: calc(100% - (78px));
-    color: #fff;
+    color: #1d1b31;
     background: rgba(29, 27, 49, 0.3);
     font-size: 25px;
     font-weight: 500;
@@ -312,18 +312,33 @@ body{
     background: rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 25rem;
+    /* box-shadow: 4 0 0 1 #11101d; */
 }
 .home-content .upper-midbody .billboard .billboard-message{
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     height: 100%;
 }
 .home-content .upper-midbody .billboard .billboard-message .text-rotate{
     font-weight:200;
     margin: 0.4em 0;
 }
+.home-content .upper-midbody .billboard .billboard-message .billboard-cv{
+    padding-left: 1rem;
+}
 .home-content .upper-midbody .billboard .billboard-picture{
-    border: 1px solid gold;
+    display:flex;
+    justify-content: center;
+    /* border: 1px solid gold; */
     height: 100%;
+}
+.home-content .upper-midbody .billboard .billboard-picture img{
+    position:relative;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity:0.8;
+    /* bottom:0; */
+    /* transform: translate(0, 90%); */
 }
 /******************mid content ends here****************/
 /********************end of main-sidebar*******************/
