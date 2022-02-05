@@ -308,9 +308,22 @@ body{
     /* margin: 18px; */
 }
 .home-content .upper-midbody .billboard{
+    display: flex;
     background: rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 25rem;
+}
+.home-content .upper-midbody .billboard .billboard-message{
+    border: 1px solid #fff;
+    height: 100%;
+}
+.home-content .upper-midbody .billboard .billboard-message .text-rotate{
+    font-weight:200;
+    margin: 0.4em 0;
+}
+.home-content .upper-midbody .billboard .billboard-picture{
+    border: 1px solid gold;
+    height: 100%;
 }
 /******************mid content ends here****************/
 /********************end of main-sidebar*******************/
