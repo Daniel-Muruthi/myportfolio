@@ -378,6 +378,17 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.home-content .upper-midbody .midbody-services .services-cards .card-services span{
+    display:flex;
+    justify-content: right;
+    color: gold;
+}
+.home-content .upper-midbody .midbody-services .services-cards .card-services .card-body{
+    height:17rem;
+}
+.home-content .upper-midbody .midbody-services .services-cards .card-services .card-body p {
+    font-size: 12px;    
+}
 /******************mid content ends here****************/
 /********************end of main-sidebar*******************/
 /***********************left side bar toggler****/
