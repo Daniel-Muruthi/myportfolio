@@ -380,6 +380,7 @@ body{
 }
 .home-content .upper-midbody .midbody-services .services-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .home-content .upper-midbody .midbody-services .services-cards .card-services span{
