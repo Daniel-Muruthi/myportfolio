@@ -15,7 +15,7 @@ body{
     background-size:cover;
     background-position: center;
     background-attachment:fixed;
-    height:200vh;
+    height:300vh;
     width: 100vw;
     /* display: block; */
 
@@ -393,6 +393,68 @@ body{
 }
 .home-content .upper-midbody .midbody-services .services-cards .card-services .card-body p {
     font-size: 12px;    
+}
+.home-content .upper-midbody .midbody-prices h2{
+    color: #fff;
+    text-align: center;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices{
+    margin:0;
+    padding: 0;
+    height: 17rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices h5{
+    font-size: 16px;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer{
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price h2 strong{
+    color: gold;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer p{
+    font-size: 11px;
+    font-style: italic;
+    color: white;
+
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer .price-btn{
+    font-size: 14px;
+    position: relative;
+    bottom: 0px;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer .price-btn a{
+    text-decoration: none;
+    color: gold;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price-benefit-list ul{
+    list-style: none;
+    display: contents;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price-benefit-list ul li{
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    /* border:1px solid black; */
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price-benefit-list ul li i{
+    font-size:x-large;
+    color: gold;
 }
 /******************mid content ends here****************/
 /********************end of main-sidebar*******************/
