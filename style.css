@@ -299,7 +299,7 @@ body{
 }
 .main-sidebar.active ~ #main-midbody{
     width: calc(100% - (250px));
-    right: 250px;
+    right: 240px;
     left:auto;
     height: 100%;
     transition: all 0.5s ease;
