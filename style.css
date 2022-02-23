@@ -18,6 +18,7 @@ body{
     height:300vh;
     width: 100vw;
     /* display: block; */
+    /* transition: all 0.5s ease; */
 
 }
 
@@ -37,7 +38,6 @@ body{
 .main-sidebar.active{
     width: 250px;
     position: fixed;
-
 }
 .main-sidebar .logo-content{
     height: 60px;
@@ -187,6 +187,7 @@ body{
     transition: all 0.4s ease;
     border-radius: 12px;
     color: #11101d;
+    white-space: nowrap;
 }
 .main-sidebar ul li a:hover{
     background: rgba(255, 255, 255, 0.2);
@@ -282,28 +283,34 @@ body{
     }
 }
 /***************mid content starts here*****************/
+
 .main-midbody{
     position:absolute;
     /* background: rgba(29, 27, 49, 0.4); */
-    height: 100%;
+    height: max-content;
+    width: calc(100% - (21.9rem));
     top: 0;
     right: 88px;
     left:17rem;
-    width: calc(100% - (17rem +88px));
     transition: all 0.5s ease;
     z-index: 2;
     padding: 1rem;
+    border:2px solid red;
 }
-.main-sidebar.active ~ .main-midbody{
-    left:17rem;
+.main-sidebar.active ~ #main-midbody{
+    width: calc(100% - (250px));
     right: 250px;
+    left:auto;
     height: 100%;
-    width: calc(100% - (17rem-250px));
+    transition: all 0.5s ease;
+}
+.main-sidebar.focus ~ #main-midbody{
+    transition: all 0.5s ease;
 }
 .home-content .upper-midbody{
     display: inline-block;
     height: 100%;
-    width: calc(100% - (78px));
+    width: calc(100% - (0px));
     color: #1d1b31;
     background: rgba(29, 27, 49, 0.3);
     font-size: 25px;
@@ -464,6 +471,7 @@ body{
     height:100vh;
     width:17rem;
     position:relative;
+    transition: all 0.5s ease;
 }
 input[type="checkbox"]#v-btn{
     display:none !important;
@@ -821,4 +829,3 @@ html, body{
     transform: scale(1.5);
 }
 /************************************************************/
-

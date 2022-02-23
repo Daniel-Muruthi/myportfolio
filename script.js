@@ -35,6 +35,18 @@ searchBtn.onclick = function(){
 function sidebarBtnChange() {
     if(mainSideBar.classList.contains("active")){
         btn.classList.replace("bx-menu", "bx-menu-alt-right");
+        ///**********************Push Menu**********///
+        $('#main-sidebar').on({
+            "shown.bs.dropdown": function() {
+                this.closable = false;
+                $('#main-midbody').css('margin-right', '250px');
+            },
+            "hide.bs.dropdown": function() {
+                this.closable = true;
+                $('#main-midbody').css('margin-right', '88px');
+            }
+        })
+        ///*********************************** *///
     }
     else{
         btn.classList.replace("bx-menu-alt-right", "bx-menu")
