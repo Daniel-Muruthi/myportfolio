@@ -24,8 +24,9 @@ let btn= document.querySelector("#sidebar-btn");
 let searchBtn= document.querySelector(".bx-search-alt-2");
 
 btn.onclick = function(){
-    mainSideBar.classList.toggle("active");
+    if(mainSideBar.classList.toggle("active")){
     sidebarBtnChange(); //This will call the function optionally
+    }
 }
 searchBtn.onclick = function(){
     mainSideBar.classList.toggle("active");
@@ -47,6 +48,7 @@ function sidebarBtnChange() {
             }
         })
         ///*********************************** *///
+        // when main sidebar is no longer active
     }
     else{
         btn.classList.replace("bx-menu-alt-right", "bx-menu")
