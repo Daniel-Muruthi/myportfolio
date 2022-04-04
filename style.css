@@ -36,7 +36,8 @@ body {
     background: #11101d;
     padding: 6px 14px;
     z-index: 99;
-    transition: all 0.5s ease;
+    transition:all 0.5s ease-in;
+    transition: all 0.4s ease-out;
     border: 1px solid #fff;
 }
 
@@ -100,7 +101,7 @@ body {
     color: #fff;
     transform: translateY(-50%);
     font-size: 22px;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     font-size: 23px;
     text-align: center;
     cursor: pointer;
@@ -334,19 +335,20 @@ body {
     top: 0;
     right: 88px;
     left: 17rem;
-    transition: transform 0.4s ease-in;
-    transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.6s ease-out;
     z-index: 2;
     padding: 1rem;
     /* border: 2px solid red; */
 }
 
 .main-sidebar.active~#main-midbody {
-    width: calc(100% - (250px));
+    width: calc(100% - (21.9rem));
     transform: translateX(-162px);
     left: auto;
     height: 100%;
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.6s ease-out;
 }
 
 #main-midbody~.sidebar-btn:not(:active) {
@@ -473,9 +475,10 @@ body {
 }
 
 .home-content .upper-midbody .midbody-prices .prices-cards {
+    position:relative;
     display: flex;
     justify-content: space-around;
-    text-align: center;
+    text-align: center !important;
 }
 
 .home-content .upper-midbody .midbody-prices .prices-cards .card-prices {
@@ -495,8 +498,12 @@ body {
 }
 
 .home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer {
-    position: absolute;
-    bottom: 0px;
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -506,10 +513,11 @@ body {
 }
 
 .home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer p {
+    position: relative;
     font-size: 11px;
     font-style: italic;
     color: white;
-
+    text-align: center;
 }
 
 .home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .prices-footer .price-btn {
@@ -539,7 +547,25 @@ body {
 
 .home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price-benefit-list ul li i {
     font-size: x-large;
+    font-weight: bolder;
     color: gold;
+    align-items: center;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price-benefit-list ul .tick::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    content: "\f00c";
+    font-size: 20px;
+    color: gold;
+    margin-right: 0.5rem;
+}
+.home-content .upper-midbody .midbody-prices .prices-cards .card-prices .price-data .price-benefit-list ul .x-tick::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    content: "\f00d";
+    font-size: 20px;
+    color: gold;
+    margin-right: 0.5rem;
 }
 
 /******************mid content ends here****************/
